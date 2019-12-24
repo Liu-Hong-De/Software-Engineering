@@ -38,6 +38,29 @@ public class Grade {
 			System.out.println("Not an integer!");  
 		} catch (IOException e) {   
 			e.printStackTrace();  
-		}        
+		}
+		
+		GradeTestWithBoundary gradeTestWithBoundary = new GradeTestWithBoundary();
+		gradeTestWithBoundary.testSmallXMax();
+		gradeTestWithBoundary.testFMin();
+		gradeTestWithBoundary.testFMax();
+		gradeTestWithBoundary.testDMin();
+		gradeTestWithBoundary.testDMax();
+		gradeTestWithBoundary.testCMin();
+		gradeTestWithBoundary.testCMax();
+		gradeTestWithBoundary.testBMin();
+		gradeTestWithBoundary.testBMax();
+		gradeTestWithBoundary.testAMin();
+		gradeTestWithBoundary.testAMax();
+		gradeTestWithBoundary.testLargeXMin();
+		
+		GradeTestWithPartition gradeTestWithPartition = new GradeTestWithPartition();
+		gradeTestWithPartition.testSmallX();
+		gradeTestWithPartition.testF();
+		gradeTestWithPartition.testD();
+		gradeTestWithPartition.testC();
+		gradeTestWithPartition.testB();
+		gradeTestWithPartition.testA();
+		gradeTestWithPartition.testLargeX();
 	} 	 
 }
